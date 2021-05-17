@@ -7,12 +7,44 @@
   --secondary-blue-color:#2196f3;
 }
 
+h1,
+h2,
+h3, 
+h4,
+h5,
+h6,
+p {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+
+img{ display: block;}
+
 .list {
   list-style: none;
 }
 
 .link {
   text-decoration: none;
+}
+
+.section{
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+.container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 body {
@@ -37,6 +69,35 @@ body {
 /* ===========End Components========== */
 
 /*--------- Header--------- */
+.header{
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation{
+  display: flex;
+  align-items: center;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+}
+
+.logo-text-header{
+  margin-right: 93px;
+}
+
+.menu-item:not(:last-child){
+  margin-right: 50px;
+}
+
+
 
 .menu .menu-link.current {
    color: var(--accent-color);
@@ -79,6 +140,7 @@ letter-spacing: 0.03em;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575
+  
 }
 
 .mail-link:hover,
@@ -93,6 +155,7 @@ letter-spacing: 0.03em;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  
 }
 
 .tel-link:hover,
@@ -110,8 +173,13 @@ letter-spacing: 0.03em;
   background-color: transparent;
   cursor: pointer;
   letter-spacing: 0.06em;
+  border-radius: 4px;
   background: #2196F3;
-  color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: white;
+  padding: 10px 32px;
+  margin-top: 30px;
 }
 
 
@@ -126,6 +194,14 @@ letter-spacing: 0.03em;
 
 .hero{
    text-align: center;
+   height: 600px;
+   left: 0px;
+   top: 80px;
+   margin: 0 auto;
+   padding-top: 200px;
+   padding-bottom: 200px;
+
+
 }
 /* ==============works============= */
 .works{
@@ -147,8 +223,47 @@ letter-spacing: 0.03em;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-top: 10px;
 }
+
+.container .features-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 94px;
+   margin-top: 94px;
+}
+
+.features-list-item:not(:last-child){
+  margin-right: 30px;
+}
+
+
 /* ===========End Features============= */
+/* ==============Work=============== */
+
+.work-img-list{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+ margin-left: -27px;
+  margin-top: -27px;
+}
+
+.work-img-item{
+  flex-basis: calc((100% - 81px) / 3);
+  margin-left: 27px;
+  margin-top: 27px;
+}
+
+
+
+
+
+
+
+
+/* ===========end-work================== */
 
 /* =============== team============ */
 
@@ -161,7 +276,28 @@ letter-spacing: 0.03em;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 10px;
 }
+.team-title-web{
+  margin-bottom: 50px;
+  margin-top: 94px;
+}
+.team-title-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.team-img-list{
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.team-img-list-img-content{
+  padding-top: 30px;
+}
+
 
 .team-text {
   font-size: 16px;
@@ -211,6 +347,20 @@ line-height: 1.71;
 letter-spacing: 0.03em;
  color: rgba(255, 255, 255, 0.6);
 }
+
+
+.footer{
+   padding-top: 60px;
+   padding-bottom: 60px;
+}
+.address{
+  margin-top: 20px;
+}
+.address-item{
+  margin-top: 9px;
+} 
+
+
  /* ==========end footer=========== */
 
 
