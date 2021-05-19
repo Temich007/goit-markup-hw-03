@@ -5,6 +5,7 @@
   --primary-white-color: white;
   --primary-text-color:black;
   --secondary-blue-color:#2196f3;
+  --primary-secondary-color:#757575;
 }
 
 h1,
@@ -40,6 +41,9 @@ img{ display: block;}
    padding-top: 94px;
    padding-bottom: 94px;
 }
+.section-p{
+   padding-top: 94px;
+}
 .container{
   width: 1200px;
   padding-left: 15px;
@@ -48,7 +52,7 @@ img{ display: block;}
 }
 
 body {
-  background: #F5F4FA;
+  background-color: #FFFFFF;
   font-family: var(--main-font);
   color: var(--primary-text-color);
   color: var(--title-text-color);
@@ -76,7 +80,7 @@ body {
 .header-container{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  border: 1px solid #ECECEC;
 }
 
 .navigation{
@@ -87,6 +91,7 @@ body {
 .menu{
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .logo-text-header{
@@ -101,9 +106,6 @@ body {
    color: var(--accent-color);
 }
 
-.font{
-background-color: #FFFFFF
-}
 .logo-blue{
   color: var(--accent-color);
 }
@@ -181,19 +183,21 @@ letter-spacing: 0.03em;
 
 
 .hero-title {
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color:white
+  margin: auto;
+  color: var(--primary-white-color);
 }
 
 .hero{
-   text-align: center;
    height: 600px;
    left: 0px;
    top: 80px;
+   text-align: center;
    margin: 0 auto;
    padding-top: 200px;
    padding-bottom: 200px;
@@ -227,8 +231,7 @@ letter-spacing: 0.03em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 94px;
-   margin-top: 94px;
+
 }
 
 .features-list-item:not(:last-child){
@@ -243,22 +246,23 @@ letter-spacing: 0.03em;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
- margin-left: -27px;
-  margin-top: -27px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .work-img-item{
-  flex-basis: calc((100% - 81px) / 3);
-  margin-left: 27px;
-  margin-top: 27px;
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 /* ===========end-work================== */
 
 /* =============== team============ */
 
-
-
+.our{
+  background-color: #F5F4FA;
+}
 .team-title {
   font-weight: 500;
   font-size: 16px;
@@ -269,7 +273,6 @@ letter-spacing: 0.03em;
 }
 .team-title-web{
   margin-bottom: 50px;
-  margin-top: 94px;
 }
 .team-title-list{
   display: flex;
@@ -278,13 +281,12 @@ letter-spacing: 0.03em;
   margin-top: -30px;
 }
 .team-img-list-img-content{
-  padding-top: 30px;
-  padding-left: 68px;
+  padding: 30px 32px;
+  text-align: center;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
 
 .team-img-list{
   flex-basis: calc((100% - 120px) / 4);
@@ -292,17 +294,11 @@ letter-spacing: 0.03em;
   margin-top: 30px;
 }
 
-.team-img-list-img-content{
-  padding-top: 30px;
-}
-
-
 .team-text {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
-  color: #757575;
+  color: var(--primary-secondary-color);
 }
 
 
@@ -356,9 +352,10 @@ letter-spacing: 0.03em;
 .address{
   margin-top: 20px;
 }
-.address-item{
-  margin-top: 9px;
-} 
+.address-item:not(:last-child){
+  margin-bottom: 9px;
+}
+
 
 
  /* ==========end footer=========== */
@@ -367,6 +364,9 @@ letter-spacing: 0.03em;
  /* ============Классы для портфолио============= */
 
   /* ===============main=================== */
+  .backcolor{
+    background-color: #EEEEEE;
+  }
 .filters-item-bth{
 font-family: 'Roboto', sans-serif;
 font-weight: 500;
@@ -400,8 +400,7 @@ line-height: 2.0;
 letter-spacing: 0.06em;
  }
  .project-content-list{
-  padding-top: 20px;
-  padding-left: 24px;
+  padding: 20px 24px;
  }
  .projects{
   display: flex;
